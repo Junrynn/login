@@ -365,8 +365,7 @@ p#insta {
 	}
 	
 .middle {
-  width: 100%;
-  margin-left: 1px;
+  width: auto;
   float: none;
 	}
 	
