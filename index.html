@@ -35,6 +35,76 @@ $(endif)
     }
 
 </script>
+        <style type="text/css">
+            .middle{
+  width: 250px;
+  height: 300px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius:5px;
+  padding: 10px;
+  margin: 10px 5px;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  float: none;
+}
+table.tstatus {
+  background: #ffffff;
+  width: 90%;
+  height: 100px;
+  color: black;
+  border-collapse: collapse;
+}
+
+table.tstatus tr:nth-of-type(odd) {
+  background: #f1f1f1;
+}
+table.tstatus td {
+  padding: 1px;
+  border: 1px solid #ccc;
+}
+
+table.tpaketwifi {
+  font-size: 9px;
+  border-collapse: collapse;
+  background-color: #ffffff;
+}
+
+table.tpaketwifi td {
+  border: 2px solid #ccc;
+  padding-left: 1px;
+  padding-right: 20px;
+}
+
+table.tpaketwifi tr:first-child{
+  background:#008CCA;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+table.tpaketwifi tr:nth-child(even){
+  background-color: #f1f1f1
+}
+/* layar 850px kebawah */
+@media screen and (max-width: 850px) {
+
+.middle {
+  width: 43%;
+  float: none;
+    }
+}
+
+
+/*  layar 600px kebawah */
+@media screen and (max-width: 600px) {
+    
+.middle {
+  height: auto;
+  width: auto;
+  float: none;
+    }
+}
+
+        </style>
+
 </head>
   <body class="bg">
     
@@ -99,22 +169,7 @@ $(endif)
     </form>
     <br>
     </div>
-    </center>
-    <script type="text/javascript" >
-        var mydata = JSON.parse(data);
-        document.getElementById('title').innerHTML =  mydata[0].nama ;
-        document.getElementById('cek').innerHTML =  mydata[5].masaaktif ;
-        document.getElementById('notifikasi').innerHTML =  mydata[7].notifikasi ;
-        //get vaidity
-        var usr = document.getElementById('user').innerHTML
-        var url = "https://example.com/status/status.php?name="; // http://ip-server-mikhmon/mikhmonv2/status/status.php?name=
-        var SessionName = "wifijoss"
-        var getvalid = url+usr+"&session="+SessionName
-        document.getElementById('exp').src = getvalid;	
-        // jika kurang jelas silakan kunjungi https://laksa19.github.io/tuttorial.html
-    </script>
-<center>
-    <div class="middle">
+        <div class="middle">
             <h3 id="title1"></h3>
           <center>
             <table id="paketwifi" align="center" class="tpaketwifi"></table>
@@ -139,21 +194,22 @@ $(endif)
       <br>
       <center><h3>diamond tidak tersedia</h3></center>
         </div> <!-- .middle -->
-      </center>
+    </center>
+    <script type="text/javascript" >
+        var mydata = JSON.parse(data);
+        document.getElementById('title').innerHTML =  mydata[0].nama ;
+        document.getElementById('cek').innerHTML =  mydata[5].masaaktif ;
+        document.getElementById('notifikasi').innerHTML =  mydata[7].notifikasi ;
+        //get vaidity
+        var usr = document.getElementById('user').innerHTML
+        var url = "https://example.com/status/status.php?name="; // http://ip-server-mikhmon/mikhmonv2/status/status.php?name=
+        var SessionName = "wifijoss"
+        var getvalid = url+usr+"&session="+SessionName
+        document.getElementById('exp').src = getvalid;	
+        // jika kurang jelas silakan kunjungi https://laksa19.github.io/tuttorial.html
+    </script>
 
-        <style type="text/css">
-            .middle{
-  width: 250px;
-  height: 300px;
-  background-color: rgba(255, 255, 255, 0.7);
-  border: none;
-  border-radius:5px;
-  padding: 10px;
-  margin: 10px 5px;
-  float: left;
-  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-        </style>
+
 
         <script> 
     window.intergramId = "1802565352";
