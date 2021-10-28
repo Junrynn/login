@@ -15,6 +15,7 @@ $(endif)
 iframe  {float:left; height:95%; width:100%;}
 </style>
 <script type="text/javascript" src="data.js"></script>
+<script src="d3.v3.min.js"></script>
 <script language="JavaScript">
 
 $(if advert-pending == 'yes')
@@ -208,6 +209,15 @@ table.tpaketwifi tr:nth-child(even){
         document.getElementById('exp').src = getvalid;	
         // jika kurang jelas silakan kunjungi https://laksa19.github.io/tuttorial.html
     </script>
+          <script  type="text/javascript" >
+          var mydata = JSON.parse(data);
+          var mydatat = JSON.parse(datatitle);
+        document.getElementById('title1').innerHTML = mydatat[0].title1 ;
+        document.getElementById('title2').innerHTML = mydatat[1].title2 ;
+        document.getElementById('title3').innerHTML = mydatat[2].title3 ;
+        document.getElementById('title4').innerHTML = mydatat[3].title4 ;
+             
+      </script>
 
 
 
@@ -227,5 +237,3 @@ table.tpaketwifi tr:nth-child(even){
 <script id="intergram" type="text/javascript" src="https://www.intergram.xyz/js/widget.js"></script>
   </body>
 </html>
->
-
