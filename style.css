@@ -1,0 +1,172 @@
+.bg	{
+	background-color: #a0a09b;
+	position: relative;
+	background-image: url(bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size:  cover;
+}
+
+.container {
+	margin-top: 1%;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(223, 43, 225,0.4);
+	padding: 1px;
+	margin-left: 40px;
+	margin-right: 40px;
+	width: 70%;
+	color: white;
+	box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+}
+
+.subjudul {
+	margin-top: 2%;
+	padding: 1px;
+	padding-top: 10px;
+	padding-bottom: 35%;
+	margin-left: 40px;
+	margin-right: 40px;
+	width: 70%;
+	color: black;
+	background-color: rgba(255, 255, 255,0.2);
+	box-shadow: 0 10px 15px 0px rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+
+}
+
+.diamondi {
+	float: left;
+	margin-top: 2%;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(223, 43, 225,0.1);
+	padding: 1px;
+	padding-top: 10px;
+	margin-left: 20px;
+	margin-right: auto;
+	width: 45%;
+	color: white;
+	box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.8), 20px 20px 20px 20px rgba(0, 0, 0, 0.19);
+	position: relative;
+}
+
+.diamonds {
+	margin-top: 2%;
+	float: right;
+	border: none;
+	border-radius: 5px;
+	background-color: rgba(223, 43, 225,0.1);
+	padding: 1px;
+	padding-top: 10px;
+	padding-bottom: 90px;
+	margin-left: auto;
+	margin-right: 20px;
+	width: 45%;
+	color: white;
+	box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	position: relative;
+}
+
+.item {
+	border: none;
+	background-color: rgba(223, 43, 225,0.4);
+	margin-top: -8px;
+	border-radius: 50px;
+	padding-top: 10px;
+	margin-right: auto;
+	width: 50%;
+	float: left;
+	color: white;
+	position: relative;
+
+}
+
+.price {
+	margin-top: -36px; 
+	background-color: rgba(223, 43, 225,0.4);
+	border: none;
+	border-radius: 50px;
+	padding-top: 10px;
+	margin-left: 50%;
+	width: 50%;
+	float: left;
+	color: white;
+	position: relative;
+}
+
+
+ul.i	{
+	text-align: center;
+	margin-top: 20px;
+	border: none;
+	border-radius: 2px;
+	padding: 1px;
+	margin-right: auto;
+	width: 55%;
+	float: left;
+	color: white;
+	position: relative;	
+}
+
+ul.p {
+	text-align: center;
+	margin-top: -243px;
+	border: none;
+	border-radius: 5px;
+	padding: 1px;
+	margin-left: auto;
+	width: 50%;
+	float: right;
+	color: white;
+	position: relative;	
+}
+
+/* layar 850px kebawah */
+@media screen and (max-width: 850px) {
+
+.container {
+	width: 90%
+}
+	
+.subjudul {
+  width: 90%;
+  float: none;
+  padding-bottom: 130%
+	}
+.diamondi {
+	width: 90%;
+	}
+
+.diamonds {
+	width: 90%;
+	}
+
+}
+/*  layar 600px kebawah */
+@media screen and (max-width: 600px) {
+	
+.diamondi {
+	width: 90%;
+}
+
+.diamonds {
+	width: 90%;
+}
+
+.subjudul {
+  width: 90%;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 180%;
+	}
+
+.container {
+	width: 90%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
