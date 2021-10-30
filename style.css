@@ -170,3 +170,29 @@ ul.p {
 	margin-right: auto;
 }
 }
+
+/*  layar 400px kebawah */
+@media screen and (max-width: 400px) {
+	.diamondi {
+	width: 90%;
+}
+
+.diamonds {
+	width: 90%;
+}
+
+.subjudul {
+  width: 90%;
+  float: none;
+  margin-right: auto;
+  margin-left: auto;
+  padding-bottom: 180%;
+	}
+
+.container {
+	width: 90%;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+}
